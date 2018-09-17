@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="14128" started-at="2018-09-17T16:31:30Z" finished-at="2018-09-17T16:31:44Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="14128" started-at="2018-09-17T16:31:30Z" finished-at="2018-09-17T16:31:44Z">
+      <class name="com.tanmaysarkar.demo.regression.MyTest">
+        <test-method status="PASS" signature="test01()[pri:0, instance:com.tanmaysarkar.demo.regression.MyTest@7ac7a4e4]" name="test01" duration-ms="14106" started-at="2018-09-17T18:31:30Z" finished-at="2018-09-17T18:31:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test01 -->
+      </class> <!-- com.tanmaysarkar.demo.regression.MyTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

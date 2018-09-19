@@ -12,7 +12,7 @@ import TestLogin.Buissnes.Login_FB;
 public class FB_test {
 
 		@Test
-		public void testFB() {
+		public void testFB() throws InterruptedException {
 		Base_SetDriver b=new Base_SetDriver();
 		WebDriver driver=b.getDriver();
 		Login_FB login01 =PageFactory.initElements(driver,Login_FB.class);
@@ -20,6 +20,15 @@ public class FB_test {
 		driver.get(url);
 		driver.manage().window().maximize();
 		login01.formFillUp("todorovic.radmila.bl@gmail.com", "Test123!");
+		
+			driver.findElement(By.name("login")).click();
+		
+		driver.findElement(By.id("userNavigationLabel")).click(); 
+		Thread.sleep(1000);
+		
+		driver.findElement(By.xpath("//span[@class='_54nh'][text()='Одјавите се']")).click();
+        	Thread.sleep(1500);
+		
 		driver.close();
 		}
 }
